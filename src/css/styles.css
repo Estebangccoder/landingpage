@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Licorice&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --azul-header: #000026;
+    --white: #ffffff;
+    --azul-section: #070635;
+    --azul-botones:#141353;
+
+    --rojo-navegation:#c10e07;
+    --rojo-fondo:#b10000;
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Serif", serif;
+    
+    
+}
+
+main{
+    
+}
+
+h1{
+    font-size: 100px;
+    position: relative;
+    left: 5%;
+    top: 20%;
+    font-family: "Licorice", cursive;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 200px;
+    color: var(--rojo-fondo);
+   
+
+  
+}
+.header{
+    background-color: var(--rojo-navegation);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header h1{
+    color:var(--white)
+}
+.navegacion{
+    display: flex;
+    gap: 50px;
+    margin: 12px;
+
+}
+
+.navegacion a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 25px;
+    display: flex;
+    gap: 8px;
+}
+
+.home{
+    width: 100%;
+    height: 800px;
+    border:1px solid blue;
+    background-image: url(../../public/images/fondo.webp);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.imagenproductos{
+   width: 40%;
+   
+}
+
+.productos article{
+    display: flex;
+    gap: 20px;
+    width: 40%;
+    
+ 
+}
+
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+
+.texto{
+width: 50%;
+}
