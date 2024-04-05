@@ -11,40 +11,37 @@
     --azul-header: #000026;
     --white: #ffffff;
     --azul-section: #070635;
-    --azul-botones:#141353;
+    --azul-botones: #141353;
 
-    --rojo-navegation:#c10e07;
-    --rojo-fondo:#b10000;
+    --rojo-navegation: #c10e07;
+    --rojo-fondo: #b10000;
     --rojo-texto: #ffdcdc;
-    --rojo-boton:#ff1f1f;
+    --rojo-boton: #ff1f1f;
 }
 
 
 
 /* RESTAURAMOS LOS ESTILOS POR DEFECTO DE LOS NAVEGADORES */
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Noto Serif", serif;
     text-decoration: none;
     border: none;
-    
-    
 }
 
 
 /* ESTILOS DEL MAIN */
 
-main{
+main {
     background-color: var(--rojo-fondo);
 }
 
 
-.header{
+.header {
     background-color: var(--rojo-navegation);
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,23 +51,24 @@ main{
     box-shadow: 0px 3px 21px 2px var(--rojo-fondo);
 }
 
-.header h1{
-    color:var(--white)
+.header h1 {
+    color: var(--white)
 }
 
-.header img{
+.header img {
     width: 5%;
     margin-left: 2%;
     padding: 7px;
 }
-.navegacion{
+
+.navegacion {
     display: flex;
     gap: 50px;
     margin: 12px;
 
 }
 
-.navegacion a{
+.navegacion a {
     color: var(--white);
     text-decoration: none;
     font-size: 25px;
@@ -80,7 +78,7 @@ main{
 
 /* ESTILOS DE LA SECCION HOME */
 
-h1{
+h1 {
     font-size: 100px;
     position: relative;
     left: 5%;
@@ -89,16 +87,16 @@ h1{
     font-weight: 800;
     font-style: normal;
     font-size: 200px;
-    color: var(--rojo-fondo);  
+    color: var(--rojo-fondo);
 }
-.home{
+
+.home {
     width: 100%;
     height: 800px;
-   
     background-image: url(../../public/images/fondo.webp);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
 }
 
 
@@ -106,44 +104,39 @@ h1{
 /* Estilos de la seccion Productos */
 
 
-.productos{
+.productos {
     display: flex;
     flex-wrap: wrap;
-    padding: 7%;
     justify-content: center;
     align-items: center;
 }
 
-.imagenproductos{
+.imagenproductos {
     width: 300px;
     height: 320px;
-   
+
 }
 
-.productos article{
+.productos article {
     display: flex;
     gap: 20px;
     width: 40%;
     padding: 40px;
-    
 }
 
-
-
-.texto{
-width: 50%;
-text-align: justify;
-color: var(--rojo-texto);
-
+.texto {
+    width: 50%;
+    text-align: justify;
+    color: var(--rojo-texto);
 }
 
-.texto h3{
+.texto h3 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 25px;
 }
 
-#botonCompra{
+#botonCompra {
     background-color: var(--white);
     width: 100%;
     height: 44px;
@@ -157,7 +150,7 @@ color: var(--rojo-texto);
 
 /* Estilos de la seccion Video */
 
-.video video{
+.video video {
     width: 100%;
 }
 
@@ -165,7 +158,7 @@ color: var(--rojo-texto);
 /* ESTILOS DE LA SECCION TIENDAS */
 
 
-.tiendas{
+.tiendas {
     display: flex;
     flex-wrap: wrap;
     padding: 7%;
@@ -174,7 +167,7 @@ color: var(--rojo-texto);
     gap: 11%;
 }
 
-.tiendas h2{
+.tiendas h2 {
     color: var(--rojo-texto);
     text-align: center;
     font-size: 50px;
@@ -183,8 +176,90 @@ color: var(--rojo-texto);
 
 /* Estilos del contacto */
 
-.contacto h2{
-display: flex;
-justify-content: center;
+.contacto {
+    width: 100%;
+    padding-bottom: 10%;
+}
 
+.contacto h2 {
+    display: flex;
+    justify-content: center;
+    color: var(--rojo-texto);
+    font-size: 50px;
+    width: 100%;
+}
+
+.tablacontacto {
+    display: flex;
+    width: 93%;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 40%;
+    align-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.campo {
+    width: 52%;
+    display: flex;
+    margin-top: 4%;
+    justify-content: space-between;
+}
+
+
+
+.contacto label {
+    color: var(--rojo-texto);
+}
+
+.cajastexto {
+    width: 200px;
+}
+
+.contacto article {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    padding-left: 10%;
+}
+
+#boton {
+    background-color: var(--white);
+    width: 30%;
+    border-radius: 25px;
+}
+
+#labelboton {
+    color: var(--rojo-boton);
+    text-align: center;
+    font-size: 25px;
+}
+
+/* Estilos del Footer */
+
+.footer {
+    background-color: var(--rojo-navegation);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    box-shadow: 30px 3px 21px 2px var(--rojo-fondo);
+}
+
+.socialmedia a {
+    color: var(--rojo-texto);
+    font-size: 350%;
+    padding: 10px;
+}
+
+.socialmedia {
+    margin-left: 30px;
+}
+
+.footer p,
+span,
+a {
+    color: var(--rojo-texto);
 }
