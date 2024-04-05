@@ -1,7 +1,11 @@
+/* IMPORTACION DE FUENTES E ICONOS */
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Licorice&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+/* VARIABLES QUE UTILIZAREMOS EN EL CSS */
 
 :root {
     --azul-header: #000026;
@@ -11,46 +15,53 @@
 
     --rojo-navegation:#c10e07;
     --rojo-fondo:#b10000;
+    --rojo-texto: #ffdcdc;
+    --rojo-boton:#ff1f1f;
 }
 
 
+
+/* RESTAURAMOS LOS ESTILOS POR DEFECTO DE LOS NAVEGADORES */
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Noto Serif", serif;
+    text-decoration: none;
+    border: none;
     
     
 }
+
+
+/* ESTILOS DEL MAIN */
 
 main{
-    
+    background-color: var(--rojo-fondo);
 }
 
-h1{
-    font-size: 100px;
-    position: relative;
-    left: 5%;
-    top: 20%;
-    font-family: "Licorice", cursive;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 200px;
-    color: var(--rojo-fondo);
-   
 
-  
-}
 .header{
     background-color: var(--rojo-navegation);
+    
     display: flex;
     justify-content: space-between;
-    position: relative;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    box-shadow: 0px 3px 21px 2px var(--rojo-fondo);
 }
 
 .header h1{
     color:var(--white)
+}
+
+.header img{
+    width: 5%;
+    margin-left: 2%;
+    padding: 7px;
 }
 .navegacion{
     display: flex;
@@ -67,17 +78,45 @@ h1{
     gap: 8px;
 }
 
+/* ESTILOS DE LA SECCION HOME */
+
+h1{
+    font-size: 100px;
+    position: relative;
+    left: 5%;
+    top: 40%;
+    font-family: "Licorice", cursive;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 200px;
+    color: var(--rojo-fondo);  
+}
 .home{
     width: 100%;
     height: 800px;
-    border:1px solid blue;
+   
     background-image: url(../../public/images/fondo.webp);
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover; 
 }
 
+
+
+/* Estilos de la seccion Productos */
+
+
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 7%;
+    justify-content: center;
+    align-items: center;
+}
+
 .imagenproductos{
-   width: 40%;
+    width: 300px;
+    height: 320px;
    
 }
 
@@ -85,15 +124,67 @@ h1{
     display: flex;
     gap: 20px;
     width: 40%;
+    padding: 40px;
     
- 
 }
 
-.productos{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5%;
+
 
 .texto{
 width: 50%;
+text-align: justify;
+color: var(--rojo-texto);
+
+}
+
+.texto h3{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+#botonCompra{
+    background-color: var(--white);
+    width: 100%;
+    height: 44px;
+    border-style: revert;
+    border: ridge;
+    border-radius: 56px;
+    margin-top: 20px;
+    font-size: 26px;
+    color: var(--rojo-boton);
+}
+
+/* Estilos de la seccion Video */
+
+.video video{
+    width: 100%;
+}
+
+
+/* ESTILOS DE LA SECCION TIENDAS */
+
+
+.tiendas{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 7%;
+    justify-content: center;
+    align-items: center;
+    gap: 11%;
+}
+
+.tiendas h2{
+    color: var(--rojo-texto);
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+/* Estilos del contacto */
+
+.contacto h2{
+display: flex;
+justify-content: center;
+
 }
